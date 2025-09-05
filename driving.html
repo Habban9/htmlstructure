@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Driving License</title>
+</head>
+<body>
+
+<h2>Driving License</h2>
+
+<p>enter your age to check wether you are eligible for driving liscense or not</p>
+
+<button onclick="myfunction()">Ok</button>
+
+<input id="age" type="number" min="18" max="70" required>
+<p id="result"></p>
+
+<script>
+
+function myfunction() {
+
+    var DLage= document.getElementById("age");
+
+    if(!DLage.checkValidity()){
+
+  document.getElementById("result").innerHTML=DLage.validationMessage;
+
+
+
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    else{
+      
+        document.getElementById("result").innerHTML="You are eligible to apply for driving lisence";
+
+
+
+    }
+    
+    
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
