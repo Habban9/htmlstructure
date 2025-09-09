@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+    <title> My Website </title>
+
+</head>
+
+<body>
+
+    <h2> Javascript Array Sorting </h2>
+
+    <p> Click the buttons to sort the array in ascending or descending order</p>
+
+    <button onclick="ascending()"> Ascending Order</button>
+
+    <button onclick="descending()"> Descending Order</button>
+
+    <p id="result"> </p>
+
+    <script>
+
+        var numbers = [5, 34, 7, 2, 3, 89, 45, 98, 2, 5, 7, 9, 8, 4, 10, 17, 19, 95, 33, 2, 12, 43, 56, 78, 8, 3, 45, 67, 87, 3, 2, 5, 43, 2, 8, 9, 5, 8, 3, 8, 2, 6,];
+
+        document.getElementById("result").innerHTML = numbers;
+
+        function ascending() {
+
+            numbers.sort(function (a, b) { return a - b });
+
+            document.getElementById("result").innerHTML = numbers;
+
+        }
+
+        function descending() {
+
+            numbers.sort(function (a, b) { return b - a });
+
+            document.getElementById("result").innerHTML = numbers;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+
