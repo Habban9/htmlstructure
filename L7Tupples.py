@@ -1,0 +1,11 @@
+#Tupples-Read only
+basicdetails=("habban","2 October","Pakistan")
+print(basicdetails)
+print(type(basicdetails))
+print(basicdetails[0])
+name,age,school,height,city=("habban","16","kips",5.8,"lahore")
+print(name)
+print(age)
+print(height)
+print(school)
+print(city)
